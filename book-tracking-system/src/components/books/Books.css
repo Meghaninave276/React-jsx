@@ -1,0 +1,117 @@
+/* BookList.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at 20% 30%, #1f1c2c, #928dab, #000000);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+  color: white;
+}
+
+.container {
+  width: 420px;
+  max-width: 95%;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ffaa;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 15px;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.3s;
+  text-shadow: none;
+  box-shadow: 0 0 8px #00f0ff44;
+}
+
+button.main {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #00f0ff;
+  color: black;
+  box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff88;
+}
+
+button.de {
+  background-color: #ff005c;
+  color: white;
+  margin-left: 10px;
+  box-shadow: 0 0 8px #ff005c, 0 0 14px #ff005c99;
+}
+
+button.up {
+  background-color: #ffaa00;
+  color: black;
+  margin-left: 10px;
+  box-shadow: 0 0 8px #ffaa00, 0 0 14px #ffaa0099;
+}
+
+p {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 5px solid #00f0ff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p .info {
+  flex-grow: 1;
+  color: #fff;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+p .actions {
+  display: flex;
+  gap: 8px;
+}
+

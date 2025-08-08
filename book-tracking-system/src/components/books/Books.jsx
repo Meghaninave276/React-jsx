@@ -1,8 +1,10 @@
-import {useState} from 'react'
+import {useState} from 'react';
+import "./Books.css";
+
 
 export default function 
 () {
-    const [booklist,setBooklist]=useState([{title:"abc",author:"xyz"}
+    const [booklist,setBooklist]=useState([{title:"Rich dad Poor dad",author:"Sharon Lechter"}
 
     ]);
     const [title,setTitle]=useState("");
@@ -16,12 +18,15 @@ export default function
 
         }
         setBooklist([...booklist,newbook])
+         setTitle("");
+    setAuthor("");  
     }
 
    function deleteb(index) {
     let temp = [...booklist];  
     temp.splice(index, 1);     
-    setBooklist(temp);         
+    setBooklist(temp);     
+     
   }
   function updateb(index)
   {
@@ -32,15 +37,18 @@ export default function
 
 
   return (
-    <div>
+    <div className='container'>
+        <h2>📘 Ultra Cool Book List</h2>
         <input type="text" placeholder='enter book title' value={title} onChange={(e)=>setTitle(e.target.value)} />
         <input type="text" placeholder='enter book AUTHOR' value={author} onChange={(e)=>setAuthor(e.target.value)} />
         <button onClick={Addbook}>Addbook</button>
         {
             booklist.map((book,i)=>(
-                <p>{book.title}-{book.author}
-                <button className='de' onClick={()=>deleteb(i)}>Delete</button>
-                <button className='up' onClick={()=>updateb(i)}>Update</button>
+                <p key={i}><span>{book.title}-{book.author}</span>
+                <span className="actions">
+      <button className="de" onClick={() => deleteb(i)}>Delete</button>
+      <button className="up" onClick={() => updateb(i)}>Update</button>
+    </span>
                 </p>
 
             ))
