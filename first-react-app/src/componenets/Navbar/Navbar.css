@@ -1,0 +1,83 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  color: rgb(251, 249, 249);
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
+} 
+
+/* Logo */
+h1 {
+  font-size: 1.8rem;
+  color: #f9f9f9;
+  letter-spacing: 1px;
+}
+
+/* Navigation links */
+ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+li {
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f5f5;
+  position: relative;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #00ffe1;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #00ffe1;
+  transition: width 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Login button */
+button {
+  padding: 0.5rem 1rem;
+  background-color: #f45c29;
+  color: #fcfefe;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b97414;
+}
