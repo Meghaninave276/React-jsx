@@ -77,3 +77,7 @@
 ### Animation Speed: Change the 2s duration in the glow animation for faster/slower effects
 
 
+https://github.com/user-attachments/assets/3a430829-749d-4122-aa02-a3fced925c04
+
+
+
