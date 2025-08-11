@@ -1,12 +1,77 @@
-# React + Vite
+# Textutils
+### Textutils is a simple and interactive React application that allows users to analyze and manipulate text in multiple ways.
+### It provides quick insights such as character count, word count, reading time estimation, vowel count, and lets you convert text to uppercase or lowercase — all ### in a sleek, glassmorphic UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Features
 
-Currently, two official plugins are available:
+### Character Count – Displays the total number of characters in the entered text.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Word Count – Calculates how many words are present.
 
-## Expanding the ESLint configuration
+### Uppercase Conversion – Converts the input text into uppercase letters.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Lowercase Conversion – Converts the input text into lowercase letters.
+
+### Estimated Reading Time – Approximates how long it will take to read the entered text.
+
+### Vowel Counter – Counts the number of vowels in the input.
+
+### Responsive UI – Clean, modern, and visually appealing design with glassmorphism effect.
+
+## 🖼 UI Preview
+
+### Glassmorphic Card with blurred background over a background image.
+
+### Smooth hover animations for buttons.
+
+### Neat input box styling for better readability.
+
+## 🛠 Technologies Used
+### React.js – For building the interactive UI.
+
+### CSS3 – For styling with glassmorphism effects.
+
+## 📂 Project Structure
+
+### bash
+### Copy
+### Edit
+### src/
+### │
+### ├── Textutils.js       # Main component logic
+### ├── Textutils.css      # Styling for Textutils component
+### └── index.js           # App entry point
+
+## 🚀 How to Run
+### Clone the repository:
+
+### bash
+### Copy
+### Edit
+### git clone https://github.com/your-username/textutils.git
+### cd textutils
+### Install dependencies:
+
+### bash
+### Copy
+### Edit
+### npm install
+### Start the development server:
+
+### bash
+### Copy
+### Edit
+### npm start
+### Open the app in your browser at:
+### arduino
+### Copy
+
+
+https://github.com/user-attachments/assets/ceba898f-1c5b-4305-a340-370194c27985
+
+
+
+
+
+Edit
+http://localhost:3000
