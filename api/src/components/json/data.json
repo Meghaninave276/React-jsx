@@ -1,0 +1,145 @@
+{
+   "fooods": [
+  {
+    "id": 1,
+    "name": "Pizza Margherita",
+    "category": "Fast Food",
+    "calories": 266,
+    "origin": "Italy"
+  },
+  {
+    "id": 2,
+    "name": "Sushi",
+    "category": "Seafood",
+    "calories": 200,
+    "origin": "Japan"
+  },
+  {
+    "id": 3,
+    "name": "Tacos",
+    "category": "Street Food",
+    "calories": 226,
+    "origin": "Mexico"
+  },
+  {
+    "id": 4,
+    "name": "Butter Chicken",
+    "category": "Curry",
+    "calories": 490,
+    "origin": "India"
+  },
+  {
+    "id": 5,
+    "name": "Caesar Salad",
+    "category": "Salad",
+    "calories": 190,
+    "origin": "USA"
+  },
+  {
+    "id": 6,
+    "name": "Ramen",
+    "category": "Noodles",
+    "calories": 436,
+    "origin": "Japan"
+  },
+  {
+    "id": 7,
+    "name": "Pav Bhaji",
+    "category": "Street Food",
+    "calories": 400,
+    "origin": "India"
+  },
+  {
+    "id": 8,
+    "name": "Croissant",
+    "category": "Bakery",
+    "calories": 231,
+    "origin": "France"
+  },
+  {
+    "id": 9,
+    "name": "Falafel",
+    "category": "Vegetarian",
+    "calories": 333,
+    "origin": "Middle East"
+  },
+  {
+    "id": 10,
+    "name": "Pho",
+    "category": "Soup",
+    "calories": 350,
+    "origin": "Vietnam"
+  },
+  {
+    "id": 11,
+    "name": "Pasta Carbonara",
+    "category": "Pasta",
+    "calories": 384,
+    "origin": "Italy"
+  },
+  {
+    "id": 12,
+    "name": "Shawarma",
+    "category": "Street Food",
+    "calories": 500,
+    "origin": "Middle East"
+  },
+  {
+    "id": 13,
+    "name": "Gulab Jamun",
+    "category": "Dessert",
+    "calories": 150,
+    "origin": "India"
+  },
+  {
+    "id": 14,
+    "name": "Cheeseburger",
+    "category": "Fast Food",
+    "calories": 303,
+    "origin": "USA"
+  },
+  {
+    "id": 15,
+    "name": "Pad Thai",
+    "category": "Noodles",
+    "calories": 357,
+    "origin": "Thailand"
+  },
+  {
+    "id": 16,
+    "name": "Biryani",
+    "category": "Rice Dish",
+    "calories": 400,
+    "origin": "India"
+  },
+  {
+    "id": 17,
+    "name": "Moussaka",
+    "category": "Casserole",
+    "calories": 350,
+    "origin": "Greece"
+  },
+  {
+    "id": 18,
+    "name": "Kimchi",
+    "category": "Fermented Food",
+    "calories": 23,
+    "origin": "Korea"
+  },
+  {
+    "id": 19,
+    "name": "Baklava",
+    "category": "Dessert",
+    "calories": 334,
+    "origin": "Turkey"
+  },
+  {
+    "id": 20,
+    "name": "Dosa",
+    "category": "South Indian",
+    "calories": 133,
+    "origin": "India"
+  }
+]
+
+}
