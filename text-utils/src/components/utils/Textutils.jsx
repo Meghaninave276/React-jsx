@@ -43,6 +43,7 @@ export default function Textutils() {
 
   return (
     <div className='textutils-container'>
+    <h2>Text-utils</h2>
         <div >
             <input type="text"  placeholder='enter text' value={text} onChange={handletext}/>
 
@@ -63,12 +64,12 @@ export default function Textutils() {
         </div>
        
         <div className='w'>
-            <h3>total char length:{char}</h3>
-            <h3>total words length:{words}</h3>
-            <h3>uppercase:{upper}</h3>
-            <h3>lowercase:{lower}</h3>
+            <h3>Total char length:{char}</h3>
+            <h3>Total words length:{words}</h3>
+            <h3>Uppercase:{upper}</h3>
+            <h3>Lowercase:{lower}</h3>
             <h3>Time to Read:{read}</h3>
-            <h3>total vowels:{vowels}</h3>
+            <h3>Total vowels:{vowels}</h3>
 
         </div>
     </div>
