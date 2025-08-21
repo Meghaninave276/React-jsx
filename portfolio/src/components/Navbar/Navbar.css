@@ -1,0 +1,30 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.navbar-sec
+{
+    height: 60px;
+    width: 100%;
+   background-color: blue;
+}
+.navbar-sec .nav ul
+{
+    height: 60px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.navbar-sec .nav ul li a
+{
+    text-decoration: none;
+    color: aliceblue;
+
+}
