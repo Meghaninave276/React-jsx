@@ -1,12 +1,81 @@
-# React + Vite
+# React Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **personal portfolio website** built with **React** that showcases your profile, GitHub projects, and a contact form. It uses modern UI design principles with **glassmorphism**, **gradient backgrounds**, and responsive layouts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Features**
+- ✅ **Responsive Navigation Bar** with hover animations
+- ✅ **Dynamic GitHub Profile & Repositories Fetching** using Axios
+- ✅ **About Section** with profile details and an avatar
+- ✅ **Projects Section** displaying GitHub repositories dynamically
+- ✅ **Contact Form** with input validation and alert on submission
+- ✅ **Modern UI Design** (Glassmorphism, gradients, hover effects)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **Tech Stack**
+- **React.js** (Functional Components & Hooks)
+- **Axios** (For API calls)
+- **CSS3** (Custom styling with gradients and blur effects)
+- **GitHub API** (For fetching profile and projects)
+
+---
+
+
+
+---
+
+## **Setup & Installation**
+
+### **1. Clone the repository**
+```bash
+git clone https://github.com/Meghaninave276/React-jsx.git
+cd React-jsx/portfolio
+
+
+
+3. Run the project
+npm start
+
+
+The project will run on http://localhost:3000/
+.
+
+API Integration
+
+Fetch GitHub Profile Data from:
+https://api.github.com/users/<your-github-username>
+
+Fetch Repositories from:
+https://api.github.com/users/<your-github-username>/repos
+
+Folder Structure
+portfolio/
+│
+├── components/
+│   ├── Navbar/       # Navigation bar
+│   ├── About/        # About section
+│   ├── Projects/     # Projects section
+│   ├── Contact/      # Contact form
+│
+├── App.js
+├── index.js
+├── package.json
+└── README.md
+
+Customization
+
+Replace meghaninave276 in API URLs with your GitHub username.
+
+Update LinkedIn and Resume links in the About section.
+
+Modify colors and gradients in CSS for your own theme.
+
+Future Enhancements
+
+✅ Add Dark Mode
+
+✅ Add Form Validation with Email Sending
+
+✅ Add Animations (Framer Motion) for smooth transitions
