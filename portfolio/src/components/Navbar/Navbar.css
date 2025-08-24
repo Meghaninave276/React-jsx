@@ -1,30 +1,97 @@
-*
-{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-.navbar-sec
-{
-    height: 60px;
+/* Navbar section with frosted glass effect */
+.navbar-sec {
     width: 100%;
-   background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
-.navbar-sec .nav ul
-{
-    height: 60px;
+
+/* Navigation container */
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar list */
+.nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-    
+    gap: 40px;
 }
 
-.navbar-sec .nav ul li a
-{
+/* Navbar links */
+.nav ul li a {
     text-decoration: none;
-    color: aliceblue;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
 
+/* Animated underline on hover */
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background: #00f0ff;
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.nav ul li a:hover::after {
+    width: 80%;
+}
+
+/* Hover effect for text */
+.nav ul li a:hover {
+    color: #00f0ff;
+    background: rgba(255,255,255,0.1);
+    transform: scale(1.05);
+}
+
+/* Responsive mobile menu */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(12px);
+        padding: 20px 0;
+        transition: all 0.5s ease;
+    }
+
+    .nav ul.active {
+        left: 0;
+    }
+
+    .nav ul li {
+        margin: 15px 0;
+    }
 }

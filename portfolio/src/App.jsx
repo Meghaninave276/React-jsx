@@ -1,5 +1,6 @@
 
 import Navbar from './components/Navbar/Navbar'
+import Home from './screen/Home/Home'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Home/>
 
    
      
