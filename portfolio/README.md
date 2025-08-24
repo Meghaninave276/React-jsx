@@ -1,81 +1,76 @@
+
 # React Portfolio Website
+## This is a personal portfolio website built with React that showcases your profile, GitHub projects, and a contact form. It uses modern UI design principles with glassmorphism, gradient backgrounds, and responsive layouts.
 
-This is a **personal portfolio website** built with **React** that showcases your profile, GitHub projects, and a contact form. It uses modern UI design principles with **glassmorphism**, **gradient backgrounds**, and responsive layouts.
+# Features
+## Responsive Navigation Bar
+## Dynamic GitHub Profile & Repositories Fetching
+## About Section
+## Projects Section
+## Contact Form
+## Modern UI Design
 
----
+## Tech Stack
+## React.js (Functional Components & Hooks)
+ ## Axios (For API calls)
+##  CSS3 (Custom styling with gradients and blur effects)
+ ##  GitHub API
+## Setup & Installation
 
-## **Features**
-- ✅ **Responsive Navigation Bar** with hover animations
-- ✅ **Dynamic GitHub Profile & Repositories Fetching** using Axios
-- ✅ **About Section** with profile details and an avatar
-- ✅ **Projects Section** displaying GitHub repositories dynamically
-- ✅ **Contact Form** with input validation and alert on submission
-- ✅ **Modern UI Design** (Glassmorphism, gradients, hover effects)
+## Clone the repository
+## bash
+## git clone https://github.com/Meghaninave276/React-jsx.git
+## cd React-jsx/portfolio
 
----
+## 2. Install dependencies
+## npm install
 
-## **Tech Stack**
-- **React.js** (Functional Components & Hooks)
-- **Axios** (For API calls)
-- **CSS3** (Custom styling with gradients and blur effects)
-- **GitHub API** (For fetching profile and projects)
-
----
-
-
-
----
-
-## **Setup & Installation**
-
-### **1. Clone the repository**
-```bash
-git clone https://github.com/Meghaninave276/React-jsx.git
-cd React-jsx/portfolio
+### 3. Run the project
+### npm start
 
 
-
-3. Run the project
-npm start
-
-
-The project will run on http://localhost:3000/
+### The project will run on http://localhost:3000/
 .
 
-API Integration
+### API Integration
 
-Fetch GitHub Profile Data from:
-https://api.github.com/users/<your-github-username>
+### Fetch GitHub Profile Data from:
+### https://api.github.com/users/<your-github-username>
 
-Fetch Repositories from:
-https://api.github.com/users/<your-github-username>/repos
+### Fetch Repositories from:
+### https://api.github.com/users/<your-github-username>/repos
 
-Folder Structure
-portfolio/
-│
-├── components/
-│   ├── Navbar/       # Navigation bar
-│   ├── About/        # About section
-│   ├── Projects/     # Projects section
-│   ├── Contact/      # Contact form
-│
-├── App.js
-├── index.js
-├── package.json
-└── README.md
+### Folder Structure
+### portfolio/
+### │
+### ├── components/
+### │   ├── Navbar/       # Navigation bar
+### │   ├── About/        # About section
+### │   ├── Projects/     # Projects section
+### │   ├── Contact/      # Contact form
+### │
+### ├── App.js
+### ├── index.js
+### ├── package.json
+### └── README.md
 
-Customization
+### Customization
 
-Replace meghaninave276 in API URLs with your GitHub username.
+### Replace meghaninave276 in API URLs with your GitHub username.
 
-Update LinkedIn and Resume links in the About section.
+### Update LinkedIn and Resume links in the About section.
 
-Modify colors and gradients in CSS for your own theme.
+### Modify colors and gradients in CSS for your own theme.
 
-Future Enhancements
+### Future Enhancements
 
-✅ Add Dark Mode
+### ✅ Add Dark Mode
 
-✅ Add Form Validation with Email Sending
+### ✅ Add Form Validation with Email Sending
 
-✅ Add Animations (Framer Motion) for smooth transitions
+### ✅ Add Animations (Framer Motion) for smooth transitions
+
+
+
+https://github.com/user-attachments/assets/fa31e6ef-d0be-4afe-b239-c58a0b262c7d
+
