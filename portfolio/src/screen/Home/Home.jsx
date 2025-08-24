@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import About from '../../components/About/About';
 import Projects from '../../components/Projects/Projects';
+import Contact from '../../components/Contact/Contact';
 
 export default function Home() {
   const [profile,setProfile]=useState({});
@@ -28,6 +29,7 @@ useEffect(()=>{ fetchprofile().then((data)=>setProfile(data));
     <div>
       <About user={profile}/>
       <Projects project={project}/>
+      <Contact/>
         
     </div>
   )

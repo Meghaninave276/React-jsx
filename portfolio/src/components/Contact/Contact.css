@@ -1,0 +1,98 @@
+/* Section Container */
+.con-sec {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    padding: 40px;
+}
+
+/* Contact Box */
+.contact {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for contact box */
+.contact:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Heading */
+.contact h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem; 
+    color: #062454;
+    
+    font-weight: bold;
+}
+
+/* Labels */
+.contact label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+/* Inputs */
+.contact input {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+/* Input focus effect */
+.contact input:focus {
+    border-color: #00f5d4;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Submit Button */
+.contact button {
+    margin-top: 15px;
+    padding: 14px;
+     color: #9dbef3;
+    color: hsl(0, 75%, 97%);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    /* transition: background 0.3s ease, transform 0.3s ease; */
+}
+
+/* Button hover */
+.contact button:hover {
+    background: linear-gradient(135deg, #011a1b, #00f5d4);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .contact {
+        padding: 30px 20px;
+    }
+    .contact h1 {
+        font-size: 1.6rem;
+    }
+}
