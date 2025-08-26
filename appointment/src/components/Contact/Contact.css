@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* Dark gradient background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Contact Section */
+.contacts {
+  width: 450px;
+  padding: 25px 30px;
+  background: rgba(20, 20, 20, 0.4); /* Dark glass effect */
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.contacts h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f8f8f8;
+  letter-spacing: 1px;
+}
+
+/* Form Container */
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Labels */
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #dcdcdc;
+}
+
+/* Inputs and Selects */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05); /* Light glass layer */
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.02);
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+input:focus,
+select:focus {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.6); /* Cyan glow */
+  border: 1px solid rgba(0, 255, 200, 0.4);
+}
+
+/* Gender Section */
+/* Gender Section */
+.mf {
+  display: flex;
+  flex-direction: column; /* Stack label and options vertically */
+  gap: 10px;
+}
+
+.gender-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #dcdcdc;
+}
+
+.gender-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gender-options label {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+
+.gender-options input[type="radio"] {
+  accent-color: #00ffcc; /* Modern cyan color */
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Select Dropdown */
+select {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Submit Button */
+button {
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00ffcc, #0099ff);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0099ff, #00ffcc);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 255, 200, 0.6);
+}
+
+/* Glow on hover for the whole form */
+.contacts:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.4);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
