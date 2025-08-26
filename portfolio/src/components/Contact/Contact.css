@@ -2,17 +2,19 @@
 .con-sec {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #1f1c2c, #928dab);
     padding: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Contact Box */
+/* Contact Form Box */
 .contact {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    padding: 40px 35px;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -21,24 +23,25 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.8s ease;
 }
 
 /* Hover effect for contact box */
 .contact:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6);
 }
 
 /* Heading */
 .contact h1 {
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 2rem; 
-    color: #062454;
-    
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #00f5d4;
     font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* Labels */
@@ -50,7 +53,7 @@
 
 /* Inputs */
 .contact input {
-    padding: 12px 15px;
+    padding: 14px;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -58,33 +61,67 @@
     color: #fff;
     background: rgba(255, 255, 255, 0.15);
     border: 2px solid transparent;
-    transition: border-color 0.3s ease, background 0.3s ease;
+    transition: border-color 0.3s ease, background 0.3s ease, transform 0.2s ease;
 }
 
 /* Input focus effect */
 .contact input:focus {
     border-color: #00f5d4;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(0, 245, 212, 0.6);
 }
 
 /* Submit Button */
 .contact button {
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 14px;
-     color: #9dbef3;
-    color: hsl(0, 75%, 97%);
-    font-size: 1rem;
+    background: linear-gradient(135deg, #062454, #00f5d4);
+    color: #fff;
+    font-size: 1.1rem;
     font-weight: bold;
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    /* transition: background 0.3s ease, transform 0.3s ease; */
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Button hover */
 .contact button:hover {
-    background: linear-gradient(135deg, #011a1b, #00f5d4);
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #00f5d4, #062454);
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 245, 212, 0.5);
+}
+
+/* Info Box */
+.info {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+/* Different colors for Name, Email, Phone */
+.info .n {
+    color: #00f5d4;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.info .e {
+    color: #62dafc;
+}
+
+.info .p {
+    color: #f0c674;
 }
 
 /* Responsive */
@@ -93,6 +130,18 @@
         padding: 30px 20px;
     }
     .contact h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
