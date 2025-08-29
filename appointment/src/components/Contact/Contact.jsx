@@ -6,16 +6,17 @@ export default function Contact() {
   const [formdata,setFormdata]=useState({
     name:"",
     age:"",
-    gender:"Male",
-    date:`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`,
+    gender:"male",
+    date:`${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`,
     cu:"accident",
     docs:"Dr. Ram nene",
     phone:""
 
 
   });
-  const [formlist,setFormlist]=useState([]);
   
+  const [formlist,setFormlist]=useState([]);
+
   const handleinput=(e)=>{
     const {name,value}=e.target;
     const newdata={...formdata,
@@ -32,6 +33,10 @@ export default function Contact() {
     if(formdata.name!="" && formdata.age!="" && formdata.phone!="")
     {
       console.log(formdata);
+      let arr=[...formlist];
+    arr.push(formdata);
+    setFormlist(arr);
+    
 
     }
     else
@@ -42,20 +47,20 @@ export default function Contact() {
     
   }
   return (
-    <div>
-        <section className='contacts'>
+    <div className='main'>
+        <div className='contacts'>
             <h1>Appointment Form</h1>
            
             <form action="" className='forms' onSubmit={handlesubmit}>
                 <div className='names'>
                     <label htmlFor="">Name</label>
-                <input type="text" name='name'onChange={handleinput} placeholder='enter Patient Name'/>
+                <input type="text" value={formdata.name} name='name'onChange={handleinput} placeholder='enter Patient Name'/>
    
                 </div>
 
                   <div className='ages'>
                     <label htmlFor="">Age</label>
-                <input type="number" name='age'onChange={handleinput} placeholder='Enter Patient Age'/>
+                <input type="number" value={formdata.age} name='age'onChange={handleinput} placeholder='Enter Patient Age'/>
    
                 </div>
                  
@@ -63,17 +68,29 @@ export default function Contact() {
             <div className='mf'>
   <label className="gender-label">Gender</label>
   <div className="gender-options">
-    <label>
-      <input type="radio" name="gender" onChange={handleinput}value="male" /> Male
-    </label>
-    <label>
-      <input type="radio" name="gender"onChange={handleinput} value="female" /> Female
-    </label>
+    <label>male </label>
+      <input
+  type="radio"
+  name="gender"
+  value="male"
+  checked={formdata.gender === "male"}
+  onChange={handleinput}
+/>
+   
+    <label>female</label>
+ <input
+  type="radio"
+  name="gender"
+  value="female"
+  checked={formdata.gender === "female"}
+  onChange={handleinput}
+/>
+    
   </div>
 </div>
                 <div className="dates">
                        <label htmlFor="">Date</label>
-                <input type="Date" name='date' onChange={handleinput}
+                <input type="date" value={formdata.date} name='date' onChange={handleinput}
                  placeholder='Enter Patient Age'/>
                 </div>
                 <div className="cp">
@@ -98,11 +115,32 @@ export default function Contact() {
                 </div>
                   <div className="p">
                        <label htmlFor="">Phone</label>
-                <input type="tel" name='phone'onChange={handleinput} placeholder='Enter Phone no.'/>
+                <input type="tel" value={formdata.phone} name='phone'onChange={handleinput} placeholder='Enter Phone no.'/>
                 </div>
                 <button type='submit'>Book Appointment</button>
             </form>
-        </section>
+
+
+        
+        </div>
+        <div className="details">
+          {
+            formlist.map((f,index)=>(
+              <div key={index}>
+                <h1>Name:{f.name}</h1>
+                <h2>Age:{f.age}</h2>
+                <h3>Gender:{f.gender}</h3>
+                <h4>Date:{f.date}</h4>
+                <h5>Cuurrent problem:{f.cu}</h5>
+                <h6>Doctor:{f.docs}</h6>
+                <p>Phone no:{f.phone}</p>
+
+              </div>
+            ))
+
+          }
+        </div>
+      
     </div>
   )
 }
