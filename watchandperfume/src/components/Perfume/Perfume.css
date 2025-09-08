@@ -1,0 +1,95 @@
+/* Perfume Section Styling */
+.per-sec {
+  padding: 50px;
+  background-color: #0b1628; /* Dark navy blue background */
+  color: #fff;
+  text-align: center;
+ 
+}
+
+.per-sec h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+  position: relative;
+}
+
+.per-sec h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #1e90ff;
+  margin: 10px auto 0;
+}
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+   margin-top: 50px;
+}
+
+/* Perfume Card */
+.grid div {
+  background-color: #102540; /* Card background */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Perfume Image */
+.grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.grid h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Description */
+.grid p {
+  font-size: 0.95rem;
+  color: #b0b8c4;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.grid h5 {
+  font-size: 1.2rem;
+  color: #00ff66; /* Green for price */
+  margin-bottom: 15px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  background-color: #1d9bf0;
+  color: #fff;
+  padding: 20px 36px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #0d8de0;
+}

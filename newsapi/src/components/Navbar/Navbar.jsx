@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div>
-        <header>
+      <header>
       {/* Collapsible section */}
       <div className="bg-dark collapse" id="navbarHeader">
         <div className="container">
@@ -77,6 +76,5 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-    </div>
   )
 }
