@@ -1,12 +1,92 @@
-# React + Vite
+# 🛒 Watch & Perfume E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a full-stack e-commerce platform built using React (frontend) and Node.js with MongoDB (backend).
+It allows users to browse, filter, and purchase watches and perfumes with a clean and responsive UI.
 
-Currently, two official plugins are available:
+## ✨ Features
+👨‍💻 User Side
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🏠 Homepage with Hero section & product highlights
 
-## Expanding the ESLint configuration
+⌚ Watch Section – browse and add watches to cart
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🌸 Perfume Section – browse and add perfumes to cart
+
+🔍 Search & Filter functionality
+
+🛒 Add to Cart system
+
+📱 Responsive Design (mobile-friendly)
+
+
+## 🏗️ Tech Stack
+
+Frontend:
+
+React.js
+
+Bootstrap 5
+
+Custom CSS
+
+
+
+## 📂 Project Structure
+ecommerce-app/
+│── frontend/          # React components (Navbar, Hero, Watch, Perfume, About, Contact)
+│── backend/           # Node.js + Express server, API routes
+│── assets/            # Images, logos, product pictures
+│── package.json       # Dependencies
+│── README.md          # Project documentation
+
+## 🚀 How to Run
+
+Clone the repo
+
+git clone https://github.com/your-username/watch-perfume-ecommerce.git
+cd watch-perfume-ecommerce
+
+
+## Install dependencies
+
+cd frontend
+npm install
+cd ../backend
+npm install
+
+
+Run frontend
+
+cd frontend
+npm start
+
+
+Run backend
+
+cd backend
+npm start
+
+
+
+🖼️ Homepage
+
+🖼️ Watch Products
+
+🖼️ Perfume Products
+
+🖼️ Cart Page
+
+📌 Future Improvements
+
+✅ Payment gateway integration
+
+✅ User authentication (login/signup)
+
+✅ Order tracking
+
+✅ Admin dashboard
+
+
+https://github.com/user-attachments/assets/ae2a3a01-67a4-461d-bab1-cdb0bf4c5594
+
+
