@@ -1,0 +1,57 @@
+.about-page {
+  background-color: #0a0a0a;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero */
+.about-hero {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 100px 20px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-hero p {
+  color: #aaa;
+}
+
+/* Skills */
+.skills-section .skill-item {
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background: #333;
+}
+
+.progress-bar {
+  font-size: 0.8rem;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+/* Call To Action */
+.cta-section {
+  background: url("https://images.unsplash.com/photo-1481277542470-605612bd2d61")
+    center/cover no-repeat;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Footer */
+.footer-section {
+  background: #111;
+  color: #bbb;
+}
+
+.footer-section h5,
+.footer-section h6 {
+  color: #fff;
+}
