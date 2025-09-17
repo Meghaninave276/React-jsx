@@ -1,4 +1,4 @@
-export const Data=[
+ const Data=[
   {
     "id": 1,
     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -240,3 +240,4 @@ export const Data=[
     }
   }
 ]
+export default Data;

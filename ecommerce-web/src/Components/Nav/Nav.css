@@ -1,0 +1,58 @@
+/* Navbar container */
+.navbar {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+ height: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Brand logo/text */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #2c3e50 !important;
+}
+
+/* Center nav items */
+.navbar-nav {
+  gap: 20px;
+}
+
+/* Nav links */
+.navbar-nav .nav-item a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #34495e;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 5px 8px;
+}
+
+/* Hover effect */
+.navbar-nav .nav-item a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Active state (optional if using NavLink later) */
+.navbar-nav .nav-item a.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Search input */
+.form-control {
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+/* Search button */
+.btn-outline-success {
+  border-radius: 20px;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
