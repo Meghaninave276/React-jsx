@@ -8,8 +8,10 @@ export default function Registration() {
     const navigate = useNavigate();
 
   return (
-    <div>
+    <div className=' overflow-hidden'>
+         <h1 className='text-center mt-2'>Sign In</h1>
         <form>
+       
   <div className="mb-3">
     <label htmlFor="exampleInputEmail1" className="form-label">Email </label>
     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />

@@ -14,6 +14,7 @@ export default function Pdetails() {
         <img src={p.image} alt={p.title} />
         <h3>{p.title}</h3>
         <p>{p.category}</p>
+        <p>{p.description}</p>
         <h4>{p.price}</h4>
       </div>
     </div>

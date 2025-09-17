@@ -7,8 +7,8 @@ export default function Products({Data,setCartlist}) {
     const navigate= useNavigate();
 
   return (
-    <div>
-        <h1 className='text-center mt-3'>Products</h1>
+    <div className='pro bg-black '>
+        <h1 className='text-center text-white'>Products</h1>
       <div className="pro-box">
         {
             Data.map((p,index)=>(
