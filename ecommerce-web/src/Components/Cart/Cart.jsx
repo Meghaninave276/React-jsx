@@ -17,6 +17,9 @@ useEffect(() => {
   const removepfromcart=(index)=>{
     const arr=[...cartlist];
     arr.splice(index,1);
+
+
+
     setCartlist(arr);
 
 
