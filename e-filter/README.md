@@ -1,16 +1,94 @@
-# React + Vite
+# 📦 Orders Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based Orders Management Dashboard that allows users to view, filter, and manage customer orders. It provides search and filtering options based on different fields such as Order ID, Customer Name, Phone, Product, Payment Status, Order Status, and Date.
 
-Currently, two official plugins are available:
+# 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📋 View Orders – Displays all customer orders in a clean, tabular format.
 
-## React Compiler
+### 🔍 Filter Orders – Search by:
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Order ID
 
-## Expanding the ESLint configuration
+Customer Name
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Phone Number
+
+Product
+
+Payment (Paid, Pending, Not Paid)
+
+Status (New, Completed, Cancelled, etc.)
+
+Date
+
+### 🧹 Clear Filters – Reset filters to see all orders again.
+
+### 🎨 Responsive UI – Styled with Bootstrap + custom CSS for a neat dashboard look.
+
+### 👤 User Profile & Header Section – Displays logged-in user with avatar and notification icon.
+
+### ➕ Action Buttons –
+
+Filter
+
+Export
+
+Add New Order (placeholder for future extension).
+
+# 🛠️ Tech Stack
+
+  React.js – Frontend framework
+
+  Bootstrap 5 – UI styling
+
+  Custom CSS – Additional styling (Home.css)
+
+  Local JSON Data – Orders are loaded from a static db.js file in assets.
+
+# 📂 Project Structure
+src/
+ ├── assets/
+ │   └── db.js        # Orders dataset (JSON-like format)
+ ├── components/
+ │   └── Home.js      # Main dashboard component
+ ├── styles/
+ │   └── Home.css     # Custom styles
+ ├── App.js
+ └── index.js
+
+# ⚙️ How It Works
+
+Orders are loaded from the db.js file into state.
+
+Filters update the displayed data dynamically.
+
+"Clear Filters" resets everything to the full dataset.
+
+Table displays the filtered order list.
+
+📸 UI Preview
+
+Header Section with notifications and profile.
+
+Tabs showing All, New, Completed, Cancelled, Pending orders.
+
+Search & Filter Box for advanced filtering.
+
+Table View listing order details.
+
+# 🚀 Future Improvements
+
+✅ Add pagination for large datasets.
+
+✅ Enable CSV/Excel export functionality.
+
+✅ Add "Add New Order" form with validation.
+
+✅ Integrate with backend API for real-time data.
+
+
+
+https://github.com/user-attachments/assets/d0ab81f3-0015-48d3-8126-2ee159abc786
+
+
