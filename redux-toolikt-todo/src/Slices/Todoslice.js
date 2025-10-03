@@ -13,6 +13,8 @@ const todoSlice=createSlice({
 
         },
         removetodo:(state,action)=>{
+            const data=action.payload;
+            state.todos.pop(data);
 
         },
         updatetodo:()=>{

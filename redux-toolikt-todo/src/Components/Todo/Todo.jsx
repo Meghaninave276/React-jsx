@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch,useSelector } from 'react-redux'
-import { addtodo } from '../../Slices/Todoslice'
+import { addtodo, removetodo } from '../../Slices/Todoslice'
+import "./Todo.css";
 
 export default function Todo() {
  const dispatch = useDispatch();
@@ -27,6 +28,9 @@ export default function Todo() {
             <button onClick={()=>{
                 dispatch(addtodo("task-1"))
             }}>Add </button>
+            <button onClick={()=>{
+                dispatch(removetodo());
+            }}>remove</button>
         </div>
     </div>
   )

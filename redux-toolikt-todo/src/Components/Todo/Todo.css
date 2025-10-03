@@ -1,0 +1,65 @@
+/* Container styling */
+div {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: #f0f4f8;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+/* Todo list container */
+.todo-list {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  margin: 10px 0;
+  
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for todos */
+.todo-list:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Todo text */
+.todo-list p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Message heading */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Add button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+/* Button hover effect */
+button:hover {
+  background: #ff3d00;
+  transform: scale(1.05);
+}
