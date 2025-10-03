@@ -1,54 +1,89 @@
-/* Whole page background */
+/* Global styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  margin: 0;
+  padding: 0;
+  color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  align-items: flex-start;
+  min-height: 100vh;
+  gap: 30px;
+  padding-top: 50px;
 }
 
-/* Container (outer div of component) */
-div {
-  background: rgba(255, 255, 255, 0.15);
+/* Card container */
+.card {
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
-  padding: 40px;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* stack children */
+  gap: 15px;
 }
 
-/* Counter value (h1) */
+/* Heading (counter value or section title) */
 h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  color: #ffe45e;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  margin-bottom: 25px;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffd369;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Buttons */
-button {
-  padding: 12px 20px;
-  font-size: 1rem;
-  margin: 8px;
+/* Inputs for todos */
+input[type="text"] {
+  padding: 20px 25px;
   border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  font-weight: 600;
-  color: white;
-  transition: transform 0.2s ease, opacity 0.3s ease;
+  border-radius: 8px;
+  width: 70%;
+  outline: none;
+  font-size: 1rem;
 }
 
-/* Different buttons by nth-child */
-button:nth-child(1) { background: #4caf50; }   /* Add - Green */
-button:nth-child(2) { background: #f44336; }   /* Sub - Red */
-button:nth-child(3) { background: #2196f3; }   /* Mul - Blue */
-button:nth-child(4) { background: #ff9800; }   /* Div - Orange */
+/* Generic button style */
+button {
+  padding: 10px 14px;
+  margin: 6px 3px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+  color: #fff;
+}
 
+/* Button hover effect */
 button:hover {
-  transform: scale(1.1);
-  opacity: 0.85;
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+/* Specific button colors */
+.add-btn { background: #4caf50; }
+.remove-btn { background: #f44336; }
+.update-btn { background: #2196f3; }
+.div-btn { background: #ff9800; }
+.mul-btn { background: #9c27b0; }
+
+/* Todo list container */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space between todos */
+}
+
+/* Each todo item */
+.todo-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

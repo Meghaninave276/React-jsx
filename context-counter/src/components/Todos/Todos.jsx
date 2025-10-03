@@ -20,7 +20,7 @@ export default function Todos() {
         <button onClick={handleadd}>Add</button>
       </div>
       {todos.map((todo, index) => (
-        <div key={index}>
+        <div key={index} className='todo-item'>
           {todo.title}
           <button onClick={()=>removetodo(todo.title)}>remove</button>
           <button onClick={()=>updatetodo(todo.title,prompt("enter new title"))}>Update</button>
