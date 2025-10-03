@@ -1,5 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
+import "./Counter.css";
 import { Countercontext } from '../../Context/Counterprovider'
 
 export default function Counter() {

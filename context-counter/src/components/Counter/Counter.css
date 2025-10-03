@@ -1,0 +1,54 @@
+/* Whole page background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container (outer div of component) */
+div {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 320px;
+}
+
+/* Counter value (h1) */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffe45e;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  margin: 8px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+/* Different buttons by nth-child */
+button:nth-child(1) { background: #4caf50; }   /* Add - Green */
+button:nth-child(2) { background: #f44336; }   /* Sub - Red */
+button:nth-child(3) { background: #2196f3; }   /* Mul - Blue */
+button:nth-child(4) { background: #ff9800; }   /* Div - Orange */
+
+button:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
