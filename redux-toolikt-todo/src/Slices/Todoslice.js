@@ -17,7 +17,9 @@ const todoSlice=createSlice({
             state.todos.pop(data);
 
         },
-        updatetodo:()=>{
+        updatetodo:(index,value,state,action)=>{
+            
+            
 
         }
     },
