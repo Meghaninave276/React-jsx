@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { resmenu } from '../../slices/resslice';
+import "./Home.css";
 
 export default function Home() {
     const dispatch = useDispatch();
@@ -14,11 +15,14 @@ export default function Home() {
     if (error) return <div>{error}</div>;
 
     return (
-        <div>
+        <div className='menu-container'>
             {res.map((r, index) => (
-                <div key={index}>
-                    <h1>{r.food_name}</h1>
+                <div key={index} className="menu-item">
+                
                     <img src={r.image1} alt="" />
+                        <h1>{r.food_name}</h1>
+                        <p>{r.description}</p>
+                        <h3>{r.price}</h3>
                 </div>
             ))}
         </div>
