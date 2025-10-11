@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { resmenu } from '../../slices/resslice';
+import { resmenu,resuser } from '../../slices/resslice';
 import "./Home.css";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
 
     useEffect(() => {
         dispatch(resmenu());
+        dispatch(resuser());
     }, [dispatch]);
 
     if (isLoading) return <div>Loading...</div>;

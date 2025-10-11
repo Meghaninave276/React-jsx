@@ -8,11 +8,19 @@ export const resmenu = createAsyncThunk(
     return res.data;
   }
 );
+export const resuser = createAsyncThunk(
+  "resuser/fetch",
+  async () => {
+    const res = await axios.get("http://localhost:3000/users");
+    return res.data;
+  }
+);
 
 const reslice = createSlice({
     name: "menu",
     initialState: {
         res: [],
+        user:[],
         isLoading: true,
         error: null,
     },

@@ -1303,5 +1303,117 @@
       "image2": "https://i.pinimg.com/1200x/df/58/6b/df586b2c97712ad413ffe6ca3edba044.jpg"
     }
 
+  ],
+  "users": [
+    {
+      "id": 101,
+      "name": "Rajesh Sharma",
+      "role": "manager",
+      "email": "manager@urbanspice.com",
+      "password": "admin123",
+      "contact": "+91 9876543210",
+      "salary": 55000,
+      "totalSales": 350000,
+      "totalOrders": 450
+    },
+    {
+      "id": 102,
+      "name": "Amit Kumar",
+      "role": "employee",
+      "email": "amit@urbanspice.com",
+      "password": "waiter123",
+      "contact": "+91 9123456789",
+      "salary": 18000,
+      "totalSales": 120000,
+      "totalOrders": 190
+    },
+    {
+      "id": 103,
+      "name": "Neha Verma",
+      "role": "employee",
+      "email": "neha@urbanspice.com",
+      "password": "waiter123",
+      "contact": "+91 9786543210",
+      "salary": 18000,
+      "totalSales": 95000,
+      "totalOrders": 160
+    },
+    {
+    "id": 104,
+    "name": "Suresh Yadav",
+    "role": "employee",
+    "email": "suresh@urbanspice.com",
+    "password": "waiter123",
+    "contact": "+91 9823345678",
+    "salary": 17500,
+    "totalSales": 87000,
+    "totalOrders": 140
+  },
+  {
+    "id": 105,
+    "name": "Priya Nair",
+    "role": "employee",
+    "email": "priya@urbanspice.com",
+    "password": "waiter123",
+    "contact": "+91 9988776655",
+    "salary": 19000,
+    "totalSales": 102000,
+    "totalOrders": 155
+  },
+  {
+    "id": 106,
+    "name": "Vikram Singh",
+    "role": "employee",
+    "email": "vikram@urbanspice.com",
+    "password": "waiter123",
+    "contact": "+91 9811122233",
+    "salary": 18500,
+    "totalSales": 111000,
+    "totalOrders": 175
+  },
+  {
+    "id": 107,
+    "name": "Anita Joshi",
+    "role": "employee",
+    "email": "anita@urbanspice.com",
+    "password": "waiter123",
+    "contact": "+91 9877700011",
+    "salary": 18500,
+    "totalSales": 96000,
+    "totalOrders": 150
+  },
+  {
+    "id": 108,
+    "name": "Deepak Chauhan",
+    "role": "employee",
+    "email": "deepak@urbanspice.com",
+    "password": "waiter123",
+    "contact": "+91 9755512345",
+    "salary": 17500,
+    "totalSales": 89000,
+    "totalOrders": 130
+  },
+  {
+    "id": 109,
+    "name": "Kavita Menon",
+    "role": "employee",
+    "email": "kavita@urbanspice.com",
+    "password": "waiter123",
+    "contact": "+91 9992233445",
+    "salary": 18200,
+    "totalSales": 115000,
+    "totalOrders": 178
+  },
+  {
+    "id": 110,
+    "name": "Rohan Patel",
+    "role": "employee",
+    "email": "rohan@urbanspice.com",
+    "password": "waiter123",
+    "contact": "+91 9122233344",
+    "salary": 18000,
+    "totalSales": 97000,
+    "totalOrders": 160
+  }
   ]
 }
