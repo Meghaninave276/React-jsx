@@ -79,7 +79,7 @@ export default function Dashboardcard() {
                 <h3 className="menu-title">{r.food_name}</h3>
                 <p className="menu-desc">{r.description}</p>
                 <div className="menu-price">${r.price}</div>
-                <button className="order-btn">Order Now</button>
+                <button className="order-btn">View More</button>
               </div>
             ))
           ) : (
