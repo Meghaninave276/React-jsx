@@ -6,7 +6,7 @@ export default function Userhomepage() {
   const { users, isLoading } = useSelector(state => state.user);
   const dispatch=useDispatch();
   useEffect(()=>{
-    dispatch(fetchusers())
+    dispatch(fetchusers());
   },[])
 
   return (
