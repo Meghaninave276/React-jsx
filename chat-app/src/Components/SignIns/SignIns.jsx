@@ -3,11 +3,12 @@ import { signin, fetchusers,signinwithgoogles } from "../../slices/userslice";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function SignIns() {
-    useEffect(()=>{
+
+  const dispatch = useDispatch(); 
+      useEffect(()=>{
     dispatch(fetchusers());
   },[])
-
-  const dispatch = useDispatch(); // ✅ Move this ABOVE useEffect
+// ✅ Move this ABOVE useEffect
   const { users } = useSelector((state) => state.user);
 
   const [email, setEmail] = useState("");
