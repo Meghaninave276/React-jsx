@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { signin, fetchusers,signinwithgoogles } from "../../slices/userslice";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export default function SignIns() {
+  const navigate=useNavigate();
 
   const dispatch = useDispatch(); 
       useEffect(()=>{
     dispatch(fetchusers());
+
   },[])
 // ✅ Move this ABOVE useEffect
-  const { users } = useSelector((state) => state.user);
+  // const { users } = useSelector((state) => state.user);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,11 +21,7 @@ export default function SignIns() {
 
   return (
     <div>
-      <div>
-        {users.map((user) => (
-          <h2 key={user.email}>{user.email}</h2>
-        ))}
-      </div>
+     
       <input
         type="text"
         placeholder="Email"
@@ -37,7 +36,8 @@ export default function SignIns() {
       />
       <button onClick={() => {
         dispatch(signin({ email, password }))
-        dispatch(fetchusers());
+        // dispatch(fetchusers());
+        navigate("/home");
       }}>
         Sign In
       </button>

@@ -7,6 +7,8 @@ import {
 import { auth, db, provider } from "../firebase";
 import { collection, getDocs, doc, setDoc } from "firebase/firestore";
 
+
+
 // 🔹 Sign In (email/password)
 export const signin = createAsyncThunk("user/signin", async ({ email, password }) => {
   const userCredential = await signInWithEmailAndPassword(auth, email, password);
@@ -58,12 +60,18 @@ const initialstate = {
   users: [],
   isLoading: false,
   error: null,
+  currentuser:{},
 };
 
 // 🔹 Slice
 const userslice = createSlice({
   name: "user",
   initialState: initialstate,
+  reducers:{
+     getuser:(state)=>{
+      state.currentuser=JSON.parse(localStorage.getItem("user")||"{}");
+     },
+  },
   extraReducers: (builder) => {
     builder
       // Email/Password Sign In
@@ -71,10 +79,17 @@ const userslice = createSlice({
         state.isLoading = true;
       })
       .addCase(signin.fulfilled, (state, action) => {
-        state.isLoading = false;
+       
+       const user=action.payload;
         const exists = state.users.some((u) => u.email === action.payload.email);
         if (!exists) state.users.push(action.payload);
-        alert("Sign in successfully!!");
+        localStorage.setItem("user",JSON.stringify(user));
+        state.currentuser=user;
+        state.isLoading=false;
+      
+        
+      
+
       })
       .addCase(signin.rejected, (state) => {
         state.isLoading = false;
@@ -116,3 +131,4 @@ const userslice = createSlice({
 });
 
 export default userslice.reducer;
+export const {getuser} = userslice.actions;
