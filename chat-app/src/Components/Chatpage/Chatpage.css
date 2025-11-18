@@ -1,5 +1,10 @@
 .chat-box{
     height: 100vh;
     background-color: rgb(55, 197, 197);
-    width: 50%;
+    width: 30%;
+}
+.chat-view
+{
+    height: 90%;
+   
 }

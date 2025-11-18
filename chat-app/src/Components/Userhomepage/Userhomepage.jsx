@@ -20,7 +20,7 @@ dispatch(getuser());
     <h2>user-{currentuser.email}</h2>
        <ol className="list-group list-group-numbered">
         {users.map((user, index) => (
-           <li onClick={()=>navigate("/chat")} class="list-group-item d-flex justify-content-between align-items-start">
+           <li onClick={()=>navigate("/chat",{state:user})} class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
       <div class="fw-bold">{user.email}</div>
       Cras justo odio
