@@ -1,10 +1,25 @@
-.chat-box{
-    height: 100vh;
-    background-color: rgb(55, 197, 197);
-    width: 30%;
+.message-div {
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
 }
-.chat-view
-{
-    height: 90%;
-   
+
+.message-right {
+  justify-content: flex-end; /* messages go to RIGHT */
+}
+
+.message-left {
+  justify-content: flex-start; /* messages go to LEFT */
+}
+
+.message-box {
+  background: #e1e1e1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.message-right .message-box {
+  background: #4caf50;
+  color: white;
 }
