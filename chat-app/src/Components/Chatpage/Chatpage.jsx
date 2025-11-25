@@ -65,41 +65,49 @@ export default function Chatpage() {
   };
 
   return (
-    <div className="chat-box">
-      <div className="chat-view">
-        <h3>{receiver.email}</h3>
-
-        <div>
-          {chats.map((chat, i) => {
-            const side =
-              chat.sender === currentuser.email
-                ? "message-right"
-                : "message-left";
-
-            return (
-              <div
-                onDoubleClick={() => handledeletemessage(chat.chatid)}
-                className={`message-div ${side}`}
-                key={i}
-              >
-                <span className="message-box">{chat.message}</span>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div>
-        <input
-          type="text"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="input"
-        />
-        <button className="button" onClick={sendMsg}>
-          Send
-        </button>
-      </div>
+   <div className="chat-container">
+  <div className="chat-header">
+    <div className="chat-user-avatar">
+      {receiver.email[0].toUpperCase()}
     </div>
+    <div className="chat-user-info">
+      <h3>{receiver.email}</h3>
+      <span className="status">online</span>
+    </div>
+  </div>
+
+  <div className="chat-body">
+    {chats.map((chat, i) => {
+      const side =
+        chat.sender === currentuser.email
+          ? "message-right"
+          : "message-left";
+
+      return (
+        <div
+          onDoubleClick={() => handledeletemessage(chat.chatid)}
+          className={`chat-message ${side}`}
+          key={i}
+        >
+          <div className="bubble">{chat.message}</div>
+        </div>
+      );
+    })}
+  </div>
+
+  <div className="chat-input-area">
+    <input
+      type="text"
+      value={message}
+      onChange={(e) => setMessage(e.target.value)}
+      className="chat-input"
+      placeholder="Type a message"
+    />
+    <button className="chat-send-btn" onClick={sendMsg}>
+      Send
+    </button>
+  </div>
+</div>
+
   );
 }

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchusers, getuser } from "../../slices/userslice";
 import { useNavigate } from "react-router-dom";
+import "./Userhomepage.css";
 
 export default function Userhomepage() {
   const navigate = useNavigate();
@@ -20,27 +21,28 @@ export default function Userhomepage() {
 
   // 🟢 FILTER: remove the logged-in user from the list
   const otherUsers = users.filter(u => u.email !== currentuser.email);
+return (
+  <div className="user-homepage">
+  <h2 className="logged-in-text">Logged in: {currentuser.email}</h2>
 
-  return (
-    <div>
-      <h2>Logged in: {currentuser.email}</h2>
+<ol className="list-group mt-3">
+  {otherUsers.map((user, index) => (
+    <li
+      key={index}
+      className="list-group-item glass-item"
+      onClick={() => navigate("/chat", { state: user })}
+    >
+      <div className="user-avatar">
+        {user.email[0].toUpperCase()}
+        <span className={`status-dot ${user.online ? "online" : "offline"}`}></span>
+      </div>
 
-      <ol className="list-group list-group-numbered">
+      <div className="fw-bold">{user.email}</div>
+    </li>
+  ))}
+</ol>
 
-        {/* Show ONLY other users */}
-        {otherUsers.map((user, index) => (
-          <li
-            key={index}
-            onClick={() => navigate("/chat", { state: user })}
-            className="list-group-item d-flex justify-content-between align-items-start"
-          >
-            <div className="ms-2 me-auto">
-              <div className="fw-bold">{user.email}</div>
-            </div>
-          </li>
-        ))}
+  </div>
+);
 
-      </ol>
-    </div>
-  );
 }

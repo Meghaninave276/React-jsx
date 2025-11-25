@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { signin, fetchusers,signinwithgoogles } from "../../slices/userslice";
+import { signin, fetchusers,signinwithgoogles,signup } from "../../slices/userslice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import "./SignIns.css";
 
 export default function SignIns() {
   const navigate=useNavigate();
@@ -19,33 +20,47 @@ export default function SignIns() {
 
 
 
-  return (
-    <div>
-     
-      <input
-        type="text"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password" // ✅ better security
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={() => {
-        dispatch(signin({ email, password }))
-        // dispatch(fetchusers());
-        navigate("/home");
-      }}>
-        Sign In
-      </button>
+return (
+  <div className="signin-container">
+    <h2 className="text-white fw-bolder">Sign In</h2>
+    <input
+      type="text"
+      placeholder="Email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+    />
 
-      <button onClick={()=>{
-        dispatch(signinwithgoogles({email,password}))
+    <input
+      type="password"
+      placeholder="Password"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+    />
 
-      }}>sign in with google</button>
-    </div>
-  );
+    <button onClick={() => {
+      dispatch(signin({ email, password }));
+      navigate("/home");
+    }}>
+      Sign In
+    </button>
+
+    <button 
+      className="google-btn"
+      onClick={() => dispatch(signinwithgoogles({ email, password }))}
+    >
+      Sign In with Google
+    </button>
+
+    <button 
+      className="google-btn"
+      onClick={() => {
+        dispatch(signup({ email, password }));
+        navigate("/signup");
+      }}
+    >
+      Sign Up
+    </button>
+  </div>
+);
+
 }
