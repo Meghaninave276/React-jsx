@@ -7,10 +7,10 @@ import {
   setDoc,
   deleteDoc,
   query,
-  orderBy
+  orderBy,
+  updateDoc
 } from "firebase/firestore";
 
-// Stable chatroom id
 const getDocId = (sender, receiver) => {
   const users = [sender, receiver].sort();
   return users[0] + "-" + users[1];
@@ -21,12 +21,10 @@ export const readmessage = createAsyncThunk(
   "chat/read",
   async ({ sender, receiver }) => {
     const docid = getDocId(sender, receiver);
-
     const q = query(
       collection(db, "chatroom", docid, "chats"),
       orderBy("createdAt", "asc")
     );
-
     const snapshot = await getDocs(q);
     return snapshot.docs.map((d) => d.data());
   }
@@ -60,12 +58,27 @@ export const deletemessage = createAsyncThunk(
   "chat/delete",
   async ({ sender, receiver, chatid }) => {
     const docid = getDocId(sender, receiver);
-
-    await deleteDoc(
-      doc(db, "chatroom", docid, "chats", chatid.toString())
-    );
-
+    await deleteDoc(doc(db, "chatroom", docid, "chats", chatid.toString()));
     return chatid;
+  }
+);
+
+// UPDATE message
+export const updatemessage = createAsyncThunk(
+  "chat/edit",
+  async ({ sender, receiver, chatid, newMessage }, thunkAPI) => {
+    try {
+      const docid = getDocId(sender, receiver);
+      await updateDoc(doc(db, "chatroom", docid, "chats", chatid.toString()), {
+        message: newMessage,
+        edited: true,
+        updatedAt: Date.now(),
+      });
+
+      return { chatid, newMessage };
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e.message);
+    }
   }
 );
 
@@ -94,10 +107,15 @@ const chatslice = createSlice({
         state.isLoading = false;
       })
       .addCase(deletemessage.fulfilled, (state, action) => {
-        // remove deleted message from state
-        state.chats = state.chats.filter(
-          (c) => c.chatid !== action.payload
-        );
+        state.chats = state.chats.filter((c) => c.chatid !== action.payload);
+      })
+      .addCase(updatemessage.fulfilled, (state, action) => {
+        const { chatid, newMessage } = action.payload;
+        const index = state.chats.findIndex((c) => c.chatid === chatid);
+        if (index !== -1) {
+          state.chats[index].message = newMessage;
+          state.chats[index].edited = true;
+        }
       });
   },
 });
