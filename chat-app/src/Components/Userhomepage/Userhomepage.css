@@ -141,6 +141,11 @@ body {
  
 }
 
+h4
+{
+  font-size: 26px;
+  
+}
 
 /* Fade animation */
 @keyframes fadeIn {

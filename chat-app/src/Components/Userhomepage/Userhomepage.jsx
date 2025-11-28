@@ -23,7 +23,7 @@ export default function Userhomepage() {
   const otherUsers = users.filter(u => u.email !== currentuser.email);
 return (
   <div className="user-homepage">
-  <h2 className="logged-in-text">Logged in: {currentuser.email}</h2>
+  <h4 className="logged-in-text">Logged in: {currentuser.email}</h4>
 
 <ol className="list-group mt-3">
   {otherUsers.map((user, index) => (
