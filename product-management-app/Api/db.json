@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Men's Cotton T-Shirt",
+      "price": 499,
+      "category": "men-tshirt",
+      "image": "https://i.pinimg.com/1200x/6d/00/3c/6d003cce076d36faea59ed5442974d20.jpg",
+      "description": "Soft pure cotton t-shirt for everyday comfort."
+    },
+    {
+      "id": 2,
+      "title": "Men's Polo T-Shirt",
+      "price": 699,
+      "category": "men-tshirt",
+      "image": "https://i.pinimg.com/736x/82/4e/42/824e42208d88510de74a65787a59627a.jpg",
+      "description": "Stylish polo with collar for casual and semi-formal wear."
+    },
+    {
+      "id": 3,
+      "title": "Men's Casual Jeans",
+      "price": 1199,
+      "category": "men-jeans",
+      "image": "https://i.pinimg.com/736x/ea/76/a2/ea76a24f1f7a5e5db8387982fbf4c001.jpg",
+      "description": "Blue stretchable jeans with slim fit design."
+    },
+    {
+      "id": 4,
+      "title": "Men's Black Jeans",
+      "price": 1299,
+      "category": "men-jeans",
+      "image": "https://i.pinimg.com/736x/46/de/bc/46debcd4b9f32a915894a6b49a2e8108.jpg",
+      "description": "Stylish black denim for everyday wear."
+    },
+    {
+      "id": 5,
+      "title": "Men's Graphic T-Shirt",
+      "price": 599,
+      "category": "men-tshirt",
+      "image": "https://i.pinimg.com/1200x/5d/d6/6f/5dd66f93897b4ec1b7844024457a5820.jpg",
+      "description": "Trendy printed graphic tee for young men."
+    },
+
+    {
+      "id": 6,
+      "title": "Women's Casual T-Shirt",
+      "price": 549,
+      "category": "women-tshirt",
+      "image": "https://i.pinimg.com/1200x/73/58/f8/7358f81147deeb856766869384fc2adc.jpg",
+      "description": "Soft cotton tee with a stylish fit."
+    },
+    {
+      "id": 7,
+      "title": "Women's Crop Top",
+      "price": 699,
+      "category": "women-tshirt",
+      "image": "https://i.pinimg.com/736x/71/5e/2b/715e2b633187ddc5d112d222eb61e78d.jpg",
+      "description": "Trendy crop top for casual outings."
+    },
+    {
+      "id": 8,
+      "title": "Women's High-Waist Jeans",
+      "price": 1399,
+      "category": "women-jeans",
+      "image": "https://i.pinimg.com/736x/90/a2/2b/90a22be42de68eb8b27bcad2f836cb94.jpg",
+      "description": "Comfort-stretch denim with high-waist design."
+    },
+    {
+      "id": 9,
+      "title": "Women's Skinny Jeans",
+      "price": 1199,
+      "category": "women-jeans",
+      "image": "https://i.pinimg.com/1200x/a7/90/b4/a790b43014c0e82a17845af78e089111.jpg",
+      "description": "Slim-fit jeans perfect for casual fashion."
+    },
+    {
+      "id": 10,
+      "title": "Women's Printed T-Shirt",
+      "price": 599,
+      "category": "women-tshirt",
+      "image": "https://i.pinimg.com/736x/80/52/97/8052972e89981276055aff1e1d7a548a.jpg",
+      "description": "Floral printed tee for stylish comfort."
+    }
+  ]
+}
