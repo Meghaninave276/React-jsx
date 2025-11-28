@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addProduct } from "../redux/productSlice";
+import { addProduct } from "../../slices/productslice";
 import { useNavigate } from "react-router-dom";
 
 const Productform = () => {

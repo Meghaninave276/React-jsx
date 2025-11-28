@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addProduct,updateProduct } from "../../slices/productslice";
 import { useNavigate, useParams } from "react-router-dom";
+import "./Addproduct.css";
 
 export default function Productform() {
   const { id } = useParams();
@@ -54,7 +55,7 @@ export default function Productform() {
         {id ? "Edit Product" : "Add Product"}
       </h2>
 
-      <form className="mt-4 col-md-6 mx-auto shadow p-4 rounded bg-light" onSubmit={handleSubmit}>
+      <form className="mt-4 col-md-6 mx-auto shadow p-4 rounded" onSubmit={handleSubmit}>
         
         <div className="mb-3">
           <label className="form-label">Product Title</label>

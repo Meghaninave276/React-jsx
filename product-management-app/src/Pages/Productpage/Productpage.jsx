@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchProducts } from "../../slices/productslice";
+import { fetchProducts,deleteProduct } from "../../slices/productslice";
 import { useNavigate } from "react-router-dom";
 
 export default function Productpage() {

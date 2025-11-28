@@ -40,7 +40,6 @@
       "image": "https://i.pinimg.com/1200x/5d/d6/6f/5dd66f93897b4ec1b7844024457a5820.jpg",
       "description": "Trendy printed graphic tee for young men."
     },
-
     {
       "id": 6,
       "title": "Women's Casual T-Shirt",
@@ -81,5 +80,6 @@
       "image": "https://i.pinimg.com/736x/80/52/97/8052972e89981276055aff1e1d7a548a.jpg",
       "description": "Floral printed tee for stylish comfort."
     }
+    
   ]
 }
