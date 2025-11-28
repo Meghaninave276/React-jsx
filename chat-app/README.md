@@ -1,16 +1,111 @@
-# React + Vite
+# ✨ Real-Time Chat Application (React + Firebase + Redux Toolkit)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern real-time chat application built using ReactJS, Redux Toolkit, Firebase Firestore, and Google Authentication.
+Users can securely create an account, sign in, and chat instantly with other registered users.
 
-Currently, two official plugins are available:
+# 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✔ User Signup & Sign-In (Email + Password)
 
-## React Compiler
+✔ Sign-In using Google Authentication
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✔ Displays list of all registered users (except logged-in user)
 
-## Expanding the ESLint configuration
+✔ Real-time messaging using Firebase Firestore
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✔ Send, Edit & Delete messages
+
+✔ Online status indicator (UI based)
+
+✔ Fully responsive Glassmorphism UI
+
+✔ Smooth animations & professional layouts
+
+✔ Secure user session stored in Local Storage
+
+# 🛠️ Tech Stack Used
+Category	Technology
+Frontend	ReactJS, CSS3, Glassmorphism Design
+State Management	Redux Toolkit
+Backend	Firebase Firestore
+Authentication	Firebase Auth (Email/Password + Google)
+Routing	React Router DOM
+📌 Key Functionalities
+
+# 🔹 User Authentication
+Users can sign up and login using email & password or Google.
+
+# 🔹 Chat System
+Each conversation is stored in a unique chatroom based on user emails. Chat includes:
+
+Send message
+
+Edit message (single click)
+
+Delete message (double click)
+
+Auto refresh every second for live experience
+
+# 🔹 UI Highlights
+
+Glassmorphic list design for user selection
+
+Modern chat UI with left/right bubble messaging
+
+Colorful gradient theme
+
+# 📌 Project Structure
+/src
+  
+  ├── slices
+  
+  │   ├── userslice.js
+  
+  │   └── chatslice.js
+  
+  ├── pages
+  
+  │   ├── SignIns.jsx
+  
+  │   ├── SignUps.jsx
+  
+  │   ├── Userhomepage.jsx
+  
+  │   └── Chatpage.jsx
+  
+  ├── firebase.js
+  
+  ├── App.js
+  
+  └── index.js
+
+🔧 Installation & Setup
+# Clone the project
+git clone <repo-link>
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+
+Update your Firebase config inside:
+
+src/firebase.js
+
+# 📝 Future Improvements
+
+🚀 Typing Indicator
+
+📌 Push Notifications
+
+📷 Image sharing support
+
+🎨 Dark/Light theme toggle
+
+https://react-jsx-nine.vercel.app/
+
+
+
+
