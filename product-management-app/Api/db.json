@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Men's Cotton T-Shirt",
       "price": 499,
       "category": "men-tshirt",
@@ -9,7 +9,7 @@
       "description": "Soft pure cotton t-shirt for everyday comfort."
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Men's Polo T-Shirt",
       "price": 699,
       "category": "men-tshirt",
@@ -17,7 +17,7 @@
       "description": "Stylish polo with collar for casual and semi-formal wear."
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Men's Casual Jeans",
       "price": 1199,
       "category": "men-jeans",
@@ -25,7 +25,7 @@
       "description": "Blue stretchable jeans with slim fit design."
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Men's Black Jeans",
       "price": 1299,
       "category": "men-jeans",
@@ -33,7 +33,7 @@
       "description": "Stylish black denim for everyday wear."
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Men's Graphic T-Shirt",
       "price": 599,
       "category": "men-tshirt",
@@ -41,7 +41,7 @@
       "description": "Trendy printed graphic tee for young men."
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Women's Casual T-Shirt",
       "price": 549,
       "category": "women-tshirt",
@@ -49,7 +49,7 @@
       "description": "Soft cotton tee with a stylish fit."
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Women's Crop Top",
       "price": 699,
       "category": "women-tshirt",
@@ -57,7 +57,7 @@
       "description": "Trendy crop top for casual outings."
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Women's High-Waist Jeans",
       "price": 1399,
       "category": "women-jeans",
@@ -65,7 +65,7 @@
       "description": "Comfort-stretch denim with high-waist design."
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Women's Skinny Jeans",
       "price": 1199,
       "category": "women-jeans",
@@ -73,7 +73,7 @@
       "description": "Slim-fit jeans perfect for casual fashion."
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Women's Printed T-Shirt",
       "price": 599,
       "category": "women-tshirt",
