@@ -1,16 +1,119 @@
-# React + Vite
+# 🛒 Product Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React.js web application for managing products with authentication, CRUD operations, and modern UI design. Users can log in, add, edit, delete, and view products with search, filter, and sorting functionality.
 
-Currently, two official plugins are available:
+# ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔒 Authentication
 
-## React Compiler
+📧 Email/Password Login – Secure login using email and password.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🟢 Google Sign-In – Quick login with Google OAuth.
 
-## Expanding the ESLint configuration
+🔑 Private Routes – Only authenticated users can access sensitive pages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚪 Logout – Clear authentication and exit the app securely.
+
+📦 Product Management
+
+➕ Add Product – Add new products with title, price, category, and image URL.
+
+✏️ Edit Product – Update product details seamlessly.
+
+🗑️ Delete Product – Remove unwanted products with confirmation.
+
+🖼️ View Products – Grid display with image, title, price, and category.
+
+🔍 Search & Filter
+
+🔎 Search Products – Search products by title in real-time.
+
+🏷️ Category Filter – Filter by category (Men/Women T-Shirts, Jeans).
+
+📊 Sort Products – Sort by price (low to high / high to low).
+
+🎨 UI/UX
+
+📱 Responsive Design – Looks great on desktop & mobile.
+
+🪞 Glassmorphism UI – Modern frosted-glass cards and forms.
+
+💅 Bootstrap Integration – Clean and responsive styling.
+
+# 🛠️ Tech Stack
+
+Frontend: React.js ⚛️, Redux Toolkit 🗂️
+
+Routing: React Router DOM 🛤️
+
+Authentication: Firebase Auth 🔒
+
+State Management: Redux Toolkit 🧩
+
+Styling: CSS 🎨, Bootstrap 🅱️, Glassmorphism effects 🪞
+
+Data Handling: Redux store 🗃️
+
+# 📁 Project Structure
+src/
+├─ components/
+│  ├─ Navbar/
+│  ├─ Loginpage/
+│  ├─ Productform/
+│  ├─ Productlist/
+│  └─ Productitem/
+├─ pages/
+│  ├─ Productpage.js
+│  └─ Editproductpage.js
+├─ slices/
+│  └─ productslice.js
+├─ firebase.js
+└─ App.js
+
+# 🚀 Getting Started
+
+Install dependencies
+
+cd product-manager
+npm install
+
+
+Setup Firebase
+
+Create a Firebase project.
+
+Enable Authentication (Email/Password & Google).
+
+Add your Firebase config in firebase.js.
+
+Run the app
+
+npm start
+
+
+Open http://localhost:3000
+ in your browser.
+
+📝 Usage
+
+🔑 Login using email/password or Google.
+
+📦 View the product list.
+
+➕ Add new products using the form.
+
+✏️ Edit or 🗑️ delete products.
+
+🔍 Search, 🏷️ filter, and 📊 sort products easily.
+
+🌟 Future Enhancements
+
+💾 Persist products in a backend (Firebase Firestore / REST API).
+
+📸 Upload product images instead of URLs.
+
+👥 Add user roles and permissions.
+
+🛍️ Detailed product view pages.
+
+🔔 Notifications & alerts for actions.
