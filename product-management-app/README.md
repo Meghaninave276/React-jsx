@@ -112,10 +112,11 @@ Open http://localhost:3000
 
 📸 Upload product images instead of URLs.
 
-https://react-jsx-rgck.vercel.app/login
-
 👥 Add user roles and permissions.
 
 🛍️ Detailed product view pages.
 
 🔔 Notifications & alerts for actions.
+
+
+https://react-jsx-rgck.vercel.app
